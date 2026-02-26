@@ -4,309 +4,274 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Vayde Digitalz Solutions | Computer Repair & Digital Marketing Vadodara</title>
-    <meta name="title" content="Vayde Digitalz Solutions | Computer Repair & Digital Marketing Vadodara">
-    <meta name="description" content="Professional computer repair, SSD upgrades, and digital marketing services in Vadodara and Surat. 8+ years of expert tech support at your doorstep.">
-    <meta name="keywords" content="Computer repair Vadodara, Laptop service Surat, Digital Marketing Agency Gujarat, SSD upgrade Vadodara, Vayde Digitalz Solutions, Computer service New Karelibaug">
+    <title>Vayde Digitalz Solutions | IT, Digital Marketing & Computer Repair</title>
+    <meta name="description" content="Premium computer repair, scalable website development, and data-driven digital marketing services. Serving enterprise and local clients across Vadodara and Surat.">
+    <meta name="keywords" content="Computer Repair Vadodara, Laptop Repair Surat, Website Development Gujarat, Digital Marketing Agency, SEO services, Hardware upgrade, Vayde Digitalz Solutions">
+    <meta name="robots" content="index, follow">
     <meta name="author" content="Vayde Digitalz Solutions">
-
-    <meta name="geo.region" content="IN-GJ" />
-    <meta name="geo.placename" content="Vadodara" />
-    <meta name="geo.position" content="22.3072;73.1812" />
-    <meta name="ICBM" content="22.3072, 73.1812" />
-
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Vayde Digitalz Solutions",
-      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-      "url": "https://yourdomain.com",
-      "telephone": "+918128646961",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "E-502, Pancham Blossom, New Karelibaug",
-        "addressLocality": "Vadodara",
-        "postalCode": "390019",
-        "addressRegion": "GJ",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 22.336140,
-        "longitude": 73.207120
-      }
+      "image": "Logo.png", 
+      "description": "Enterprise-grade computer repair, web development, and digital marketing solutions.",
+      "telephone": "+91-8128646961",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "E-502, Pancham Blossom, New Karelibaug",
+          "addressLocality": "Vadodara",
+          "postalCode": "390019",
+          "addressRegion": "Gujarat",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Surat",
+          "addressRegion": "Gujarat",
+          "addressCountry": "IN"
+        }
+      ]
     }
     </script>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
     <style>
-        :root {
-            --primary: #007bff;
-            --secondary: #6c757d;
-            --dark: #1a1a1a;
-            --light: #f8f9fa;
-            --accent: #00d4ff;
-            --whatsapp: #25d366;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body { background-color: var(--light); color: #333; line-height: 1.6; }
-
-        /* Navigation */
-        nav {
-            background: white;
-            padding: 0.5rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        /* Logo Styling */
-        .logo-container {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            gap: 10px;
-        }
-
-        .logo-img {
-            height: 50px; /* Adjust size as needed */
-            width: auto;
-        }
-
-        .logo-text { 
-            font-weight: bold; 
-            font-size: 1.3rem; 
-            color: var(--primary); 
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 10px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover { color: var(--primary); }
-
-        .cta-btn {
-            background: var(--primary);
-            color: white !important;
-            padding: 8px 18px;
-            border-radius: 5px;
-        }
-
-        /* Hero Section */
-        header {
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 0 10%;
-            margin-top: 60px;
-        }
-
-        header h1 { font-size: 3rem; margin-bottom: 1rem; }
-        header p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 800px; }
-
-        .btn {
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin: 10px;
-            display: inline-block;
-            transition: 0.3s;
-        }
-        .btn-primary { background: var(--primary); color: white; }
-        .btn-outline { border: 2px solid white; color: white; }
-        .btn-primary:hover { background: #0056b3; }
-
-        /* Sections */
-        section { padding: 80px 10%; }
-        .section-title { text-align: center; margin-bottom: 40px; }
-        .section-title h2 { font-size: 2.5rem; color: var(--dark); }
-
-        /* Locations */
-        .locations-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-        .loc-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 5px solid var(--primary); }
-
-        /* Services */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .service-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .service-box h3 { color: var(--primary); margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .service-box ul { list-style: none; }
-        .service-box li { margin-bottom: 10px; }
-        .service-box li i { color: var(--primary); margin-right: 10px; }
-
-        /* FAQ Section */
-        .faq-container { max-width: 800px; margin: 0 auto; }
-        .faq-item { background: white; margin-bottom: 15px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .faq-item h4 { color: var(--primary); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
-
-        /* WhatsApp Floating Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--whatsapp);
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            padding: 12px 25px;
-            box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
-            z-index: 2000;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: bold;
-            transition: transform 0.3s ease;
-        }
-        .whatsapp-float:hover { transform: scale(1.05); color: white; background-color: #128c7e; }
-
-        /* Footer */
-        footer { background: #111; color: #ccc; padding: 50px 10% 20px; text-align: center; }
-        .socials a { color: white; font-size: 1.5rem; margin: 0 15px; }
-        .tagline { font-style: italic; margin-top: 25px; color: var(--secondary); font-size: 1.2rem; }
-
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .locations-grid { grid-template-columns: 1fr; }
-            header h1 { font-size: 2rem; }
-            .whatsapp-float span { display: none; }
-            .whatsapp-float { padding: 15px; border-radius: 50%; bottom: 20px; right: 20px; }
-            .logo-text { font-size: 1rem; }
-            .logo-img { height: 40px; }
-        }
+        /* Base & Custom Cursor setup */
+        body { background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; cursor: none; overflow-x: hidden; scroll-behavior: smooth; }
+        .cursor-dot, .cursor-outline { position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); border-radius: 50%; z-index: 9999; pointer-events: none; }
+        .cursor-dot { width: 8px; height: 8px; background-color: #0d9488; }
+        .cursor-outline { width: 40px; height: 40px; border: 1px solid rgba(249, 115, 22, 0.5); transition: width 0.2s, height 0.2s, background-color 0.2s; }
+        .glass-nav { background: rgba(10, 10, 10, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .text-gradient { background: linear-gradient(to right, #0d9488, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .premium-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; position: relative; overflow: hidden; }
+        .premium-card::before { content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(13,148,136,0.1) 0%, transparent 60%); opacity: 0; transition: opacity 0.4s ease; }
+        .premium-card:hover { transform: translateY(-10px); border-color: rgba(13, 148, 136, 0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .premium-card:hover::before { opacity: 1; }
+        .ambient-glow { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, transparent 70%); top: -10%; right: -10%; z-index: -1; border-radius: 50%; filter: blur(60px); }
+        /* Custom list styling */
+        .service-list li { position: relative; padding-left: 1.25rem; }
+        .service-list li::before { content: "•"; color: #0d9488; position: absolute; left: 0; font-weight: bold; }
     </style>
 </head>
-<body>
+<body class="antialiased selection:bg-teal-500 selection:text-white">
 
-    <nav>
-        <a href="#home" class="logo-container">
-            <img src="Logo.png" alt="Vayde Digitalz Logo" class="logo-img">
-            <span class="logo-text">Vayde Digitalz Solutions</span>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="glass-nav fixed w-full z-50 transition-all duration-300 px-8 py-5 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold tracking-widest flex items-center gap-3 hover-target">
+            <div class="bg-white/90 p-1.5 rounded-lg shadow-[0_0_10px_rgba(13,148,136,0.3)] backdrop-blur-sm flex items-center justify-center">
+                <img src="Logo.png" alt="Vayde Digitalz Solutions Logo" class="h-8 w-auto drop-shadow-md">
+            </div>
+            <div>VAYDE<span class="text-gray-400 font-light">DIGITALZ</span></div>
         </a>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#locations">Locations</a>
-            <a href="#faq">FAQ</a>
-            <a href="https://wa.me/918128646961?text=Hello,%20I%20want%20to%20book%20a%20service." class="cta-btn">Book Now</a>
-        </div>
-    </nav>
 
-    <header id="home">
-        <h1>Expert Computer Repair & Digital Solutions</h1>
-        <p>Reliable tech support at your doorstep in Vadodara and Surat. Hardware fixes, system upgrades, and digital marketing strategies to grow your business.</p>
-        <div class="hero-btns">
-            <a href="https://wa.me/918128646961?text=Hi,%20I%20need%20a%20free%20quote%20for%20a%20tech%20service." class="btn btn-primary"><i class="fab fa-whatsapp"></i> Get Free Quote</a>
-            <a href="tel:+918128646961" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
-        </div>
+        <nav class="hidden md:flex gap-10 text-sm font-medium text-gray-300 uppercase tracking-widest">
+            <a href="#about" class="hover:text-teal-400 transition hover-target">About</a>
+            <a href="#services" class="hover:text-teal-400 transition hover-target">Services</a>
+            <a href="#locations" class="hover:text-teal-400 transition hover-target">Locations</a>
+        </nav>
+        <div class="text-orange-500 text-sm font-bold tracking-widest hover-target">જય મલ્હાર</div>
     </header>
 
-    <section id="locations">
-        <div class="section-title">
-            <h2>Serving Gujarat’s Tech Needs</h2>
-            <p>Visit us or request on-site support in these regions</p>
-        </div>
-        <div class="locations-grid">
-            <div class="loc-card">
-                <h3><i class="fas fa-map-marker-alt"></i> Vadodara (Main)</h3>
-                <p>E-502, Pancham Blossom, New Karelibaug, Vadodara – 390019.</p>
+    <main>
+        <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+            <div class="ambient-glow"></div>
+            <div class="max-w-7xl mx-auto px-6 text-center z-10">
+                <p class="gsap-hero text-orange-500 tracking-[0.3em] text-sm uppercase mb-6 font-semibold">Serving Vadodara & Surat</p>
+                <h1 class="gsap-hero text-6xl md:text-8xl font-black tracking-tighter leading-tight mb-8">
+                    Elevate Your <br>
+                    <span class="text-gradient">Digital Infrastructure</span>
+                </h1>
+                <p class="gsap-hero text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">
+                    From deep-level computer diagnostics and hardware recovery to high-performance web development and targeted digital marketing campaigns.
+                </p>
+                <div class="gsap-hero flex justify-center gap-6">
+                    <a href="https://wa.me/918128646961?text=Hello%20Vayde%20Digitalz%20Solutions%2C%20I%20am%20interested%20in%20your%20IT%20and%20Digital%20Marketing%20services.%20Could%20we%20schedule%20a%20consultation%3F" target="_blank" rel="noopener noreferrer" class="hover-target px-8 py-4 bg-teal-600 text-white text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-teal-500 transition duration-300 flex items-center justify-center gap-3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Get In Touch
+                    </a>
+                </div>
             </div>
-            <div class="loc-card">
-                <h3><i class="fas fa-city"></i> Surat (Service Branch)</h3>
-                <p>Full-scale digital and hardware support across Surat City!</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services" style="background: #f0f2f5;">
-        <div class="section-title">
-            <h2>Our Professional Services</h2>
-        </div>
-        <div class="services-grid">
-            <div class="service-box">
-                <h3><i class="fas fa-tools"></i> Computer & Hardware</h3>
-                <ul>
-                    <li><i class="fas fa-check"></i> SSD & RAM Upgrades</li>
-                    <li><i class="fas fa-check"></i> Screen & Battery Replacement</li>
-                    <li><i class="fas fa-check"></i> OS Installation (Win/Mac)</li>
-                    <li><i class="fas fa-check"></i> Virus & Malware Removal</li>
-                    <li><i class="fas fa-check"></i> Expert Data Recovery</li>
-                </ul>
+        <section id="about" class="py-20 bg-[#080b12] border-y border-gray-900">
+            <div class="max-w-5xl mx-auto px-6 text-center gsap-fade">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Bridging Hardware & Digital Ecosystems</h2>
+                <p class="text-gray-400 leading-relaxed text-lg">
+                    At <strong>Vayde Digitalz Solutions</strong>, we understand that a modern business requires both robust physical hardware and a powerful online presence. Whether your workstation requires immediate virus removal and OS reinstallation, or your brand needs a custom-coded website and an aggressive affiliate digital marketing strategy, our dual-expertise approach ensures you never fall behind the technological curve.
+                </p>
             </div>
-            <div class="service-box">
-                <h3><i class="fas fa-chart-line"></i> Web & Digital Growth</h3>
-                <ul>
-                    <li><i class="fas fa-laptop-code"></i> Custom Website Design</li>
-                    <li><i class="fas fa-bullhorn"></i> Local SEO Strategy</li>
-                    <li><i class="fas fa-ad"></i> Digital Marketing & ROI</li>
-                    <li><i class="fas fa-search"></i> Google Business Setup</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="faq">
-        <div class="section-title">
-            <h2>Frequently Asked Questions</h2>
-        </div>
-        <div class="faq-container">
-            <div class="faq-item">
-                <h4><i class="fas fa-question-circle"></i> Do you provide doorstep service?</h4>
-                <p>Yes, we provide doorstep hardware repair and software support in Vadodara and Surat.</p>
-            </div>
-            <div class="faq-item">
-                <h4><i class="fas fa-question-circle"></i> How long does an upgrade take?</h4>
-                <p>SSD and RAM upgrades are usually completed within 24 hours to ensure minimal downtime.</p>
-            </div>
-            <div class="faq-item">
-                <h4><i class="fas fa-question-circle"></i> Do you work with small businesses?</h4>
-                <p>Yes! We specialize in helping local businesses grow through modern websites and digital marketing.</p>
-            </div>
-        </div>
-    </section>
+        <section id="services" class="py-32 bg-[#050505] relative z-10">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="gsap-fade mb-20 md:flex justify-between items-end border-b border-gray-800 pb-10">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Core Competencies</h2>
+                    </div>
+                    <p class="text-gray-500 max-w-md text-sm mt-4 md:mt-0">Comprehensive IT solutions designed to minimize downtime and accelerate your digital growth across Gujarat.</p>
+                </div>
 
-    <a href="https://wa.me/918128646961?text=Hello%20Vayde%20Digitalz,%20I%20saw%20your%20website%20and%20need%20assistance." class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-        <span>Chat with an Expert</span>
-    </a>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="gsap-fade premium-card p-10 rounded-2xl hover-target">
+                        <div class="h-12 w-12 bg-teal-900/50 rounded-lg flex items-center justify-center mb-6 text-teal-400 text-2xl">💻</div>
+                        <h3 class="text-xl font-bold mb-3">Website Development</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5 border-b border-gray-800 pb-4">Scalable website development, CMS integration, and corporate digital experiences built for speed and SEO.</p>
+                        <ul class="service-list text-gray-300 text-sm space-y-2">
+                            <li>Custom Web Design & UI/UX</li>
+                            <li>E-Commerce Platform Solutions</li>
+                            <li>CMS Setup (WordPress, Shopify)</li>
+                            <li>Website Maintenance & Hosting</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="gsap-fade premium-card p-10 rounded-2xl hover-target">
+                        <div class="h-12 w-12 bg-orange-900/50 rounded-lg flex items-center justify-center mb-6 text-orange-400 text-2xl">📈</div>
+                        <h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5 border-b border-gray-800 pb-4">Data-driven strategies, affiliate marketing setups, and SEO to dominate search engines and social ecosystems.</p>
+                        <ul class="service-list text-gray-300 text-sm space-y-2">
+                            <li>Local & Global SEO Strategies</li>
+                            <li>Social Media Management</li>
+                            <li>Google Ads & PPC Campaigns</li>
+                            <li>Affiliate Marketing Strategies</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="gsap-fade premium-card p-10 rounded-2xl hover-target">
+                        <div class="h-12 w-12 bg-teal-900/50 rounded-lg flex items-center justify-center mb-6 text-teal-400 text-2xl">🔧</div>
+                        <h3 class="text-xl font-bold mb-3">Hardware & OS Installation</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5 border-b border-gray-800 pb-4">Enterprise hardware replacement, custom PC builds, and secure, bloatware-free OS provisioning.</p>
+                        <ul class="service-list text-gray-300 text-sm space-y-2">
+                            <li>Custom PC Building & Setup</li>
+                            <li>Windows/Linux OS Installation</li>
+                            <li>Motherboard & Component Swaps</li>
+                            <li>Driver & Firmware Updates</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="gsap-fade premium-card p-10 rounded-2xl hover-target">
+                        <div class="h-12 w-12 bg-orange-900/50 rounded-lg flex items-center justify-center mb-6 text-orange-400 text-2xl">🛡️</div>
+                        <h3 class="text-xl font-bold mb-3">Virus & Malware Removal</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5 border-b border-gray-800 pb-4">Advanced threat removal, ransomware recovery, and endpoint protection to ensure zero compromised data.</p>
+                        <ul class="service-list text-gray-300 text-sm space-y-2">
+                            <li>Deep System Virus Scans</li>
+                            <li>Ransomware & Spyware Removal</li>
+                            <li>Premium Antivirus Setup</li>
+                            <li>Network Security Audits</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="gsap-fade premium-card p-10 rounded-2xl hover-target">
+                        <div class="h-12 w-12 bg-teal-900/50 rounded-lg flex items-center justify-center mb-6 text-teal-400 text-2xl">⚙️</div>
+                        <h3 class="text-xl font-bold mb-3">Software Troubleshooting</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5 border-b border-gray-800 pb-4">Deep-level software diagnostics, blue-screen resolution, and workflow optimization.</p>
+                        <ul class="service-list text-gray-300 text-sm space-y-2">
+                            <li>BSOD (Blue Screen) Diagnostics</li>
+                            <li>Application Error Resolution</li>
+                            <li>System Performance Tuning</li>
+                            <li>Enterprise Software Config</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="gsap-fade premium-card p-10 rounded-2xl hover-target">
+                        <div class="h-12 w-12 bg-orange-900/50 rounded-lg flex items-center justify-center mb-6 text-orange-400 text-2xl">💾</div>
+                        <h3 class="text-xl font-bold mb-3">Data Recovery & Upgrades</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5 border-b border-gray-800 pb-4">Forensic data retrieval from failing drives and seamless system architecture upgrades.</p>
+                        <ul class="service-list text-gray-300 text-sm space-y-2">
+                            <li>HDD/SSD Data Retrieval</li>
+                            <li>Accidental Deletion Recovery</li>
+                            <li>RAM & Storage Capacity Upgrades</li>
+                            <li>Automated Cloud Backup Setup</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p><strong>Vayde Digitalz Solutions</strong></p>
-        <p>E-502, Pancham Blossom, New Karelibaug, Vadodara – 390019.</p>
-        <div class="socials" style="margin: 15px 0;">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p class="tagline">"Jay Malhar"</p>
-        <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Vayde Digitalz Solutions. All Rights Reserved.</p>
-    </footer>
+        <section id="locations" class="py-32 bg-[#050505] border-t border-gray-900">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <h2 class="gsap-fade text-3xl md:text-5xl font-bold mb-12">Strategic Hubs</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="gsap-fade premium-card p-10 rounded-2xl text-left border-t-4 border-t-teal-500 hover-target">
+                        <p class="text-teal-400 text-xs font-bold uppercase tracking-widest mb-2">Headquarters</p>
+                        <h3 class="text-2xl font-bold text-white mb-1">Vadodara</h3>
+                        <p class="text-gray-200 font-medium mb-4">Mayur Vayde</p>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            E-502, Pancham Blossom,<br>New Karelibaug,<br>Vadodara - 390019.
+                        </p>
+                        <div class="pt-6 border-t border-gray-800">
+                            <p class="text-sm text-gray-500 uppercase tracking-widest mb-1">Direct WhatsApp</p>
+                            <a href="https://wa.me/918128646961?text=Hello%20Vayde%20Digitalz%20Solutions%2C%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" class="text-xl font-light text-white tracking-wider hover:text-green-400 transition flex items-center gap-2 mt-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                +91-8128646961
+                            </a>
+                        </div>
+                    </div>
 
+                    <div class="gsap-fade premium-card p-10 rounded-2xl text-left border-t-4 border-t-orange-500 hover-target">
+                        <p class="text-orange-400 text-xs font-bold uppercase tracking-widest mb-2">Regional Hub</p>
+                        <h3 class="text-2xl font-bold text-white mb-1">Surat</h3>
+                        <p class="text-gray-200 font-medium mb-4">Bhardwaj Mahidam</p>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Providing dedicated IT support, marketing consultation, and on-site hardware solutions across the Surat metropolitan area.
+                        </p>
+                        <div class="pt-6 border-t border-gray-800">
+                            <p class="text-sm text-gray-500 uppercase tracking-widest mb-1">Direct WhatsApp</p>
+                            <a href="https://wa.me/919979137831?text=Hello%20Vayde%20Digitalz%20Solutions%2C%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" class="text-xl font-light text-white tracking-wider hover:text-green-400 transition flex items-center gap-2 mt-2">
+                                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                +91-9979137831
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Custom Cursor Logic
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        
+        window.addEventListener('mousemove', function(e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            cursorOutline.animate({ left: `${posX}px`, top: `${posY}px` }, { duration: 500, fill: "forwards" });
+        });
+
+        const hoverTargets = document.querySelectorAll('.hover-target');
+        hoverTargets.forEach(target => {
+            target.addEventListener('mouseenter', () => {
+                cursorOutline.style.width = '60px';
+                cursorOutline.style.height = '60px';
+                cursorOutline.style.backgroundColor = 'rgba(13, 148, 136, 0.1)';
+            });
+            target.addEventListener('mouseleave', () => {
+                cursorOutline.style.width = '40px';
+                cursorOutline.style.height = '40px';
+                cursorOutline.style.backgroundColor = 'transparent';
+            });
+        });
+
+        // GSAP Animations Setup
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".gsap-hero", { y: 50, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out", delay: 0.2 });
+
+        const fadeElements = document.querySelectorAll(".gsap-fade");
+        fadeElements.forEach(el => {
+            gsap.from(el, { scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }, y: 50, opacity: 0, duration: 0.8, ease: "power2.out" });
+        });
+    </script>
 </body>
-
 </html>
