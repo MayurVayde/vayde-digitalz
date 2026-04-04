@@ -296,17 +296,24 @@ nav .nav-tagline{display:none}
 /* CUSTOM CURSOR */
 .cursor-dot, .cursor-outline { position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); border-radius: 50%; z-index: 9999; pointer-events: none; }
 .cursor-dot { width: 8px; height: 8px; background-color: var(--teal); }
-.cursor-outline { width: 40px; height: 40px; border: 1px solid var(--teal); transition: width 0.2s, height 0.2s, background-color 0.2s; }
+.cursor-outline { width: 40px; height: 40px; border: 1px solid var(--teal); transition: all 0.15s ease-out; }
+.cursor-outline.cursor-hover { width: 60px; height: 60px; background-color: rgba(13, 148, 136, 0.15); border-color: var(--teal-light); }
 @media(max-width: 768px) {
   .cursor-dot, .cursor-outline { display: none; }
 }
 body { cursor: default; }
-a, button { cursor: pointer; }
+a, button, .nav-cta, .social-btn, .svc-card, .port-card, .testi-card { cursor: pointer; }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <style>
-      .hero-swiper { width: 100%; min-height: 80vh; }
-      .slide-bg { position: absolute; inset: 0; z-index: 1; }
+      .hero-swiper { width: 100%; aspect-ratio: 21 / 9; min-height: 550px; height: auto; }
+      @media(max-width: 768px) {
+        .hero-swiper { min-height: 350px; aspect-ratio: 21 / 9; }
+        .hero h1 { font-size: 1.8rem !important; }
+        .hero-desc { font-size: 0.9rem !important; margin-bottom: 1.5rem !important; }
+        .swiper-slide { padding: 3rem 1rem !important; }
+      }
+      .slide-bg { position: absolute; inset: 0; z-index: 1; background-position: center !important; background-size: cover !important; }
       .swiper-slide { display: flex; align-items: center; justify-content: center; text-align: center; position: relative; padding: 6rem 2rem 4rem; }
       .swiper-button-next, .swiper-button-prev { color: var(--teal) !important; }
       .swiper-pagination-bullet-active { background-color: var(--teal) !important; }
@@ -867,6 +874,33 @@ document.addEventListener('DOMContentLoaded', () => {
         "max-glare": 0.2,
         scale: 1.02
     });
+
+    // Custom Cursor Logic
+    const cursorDot = document.querySelector(".cursor-dot");
+    const cursorOutline = document.querySelector(".cursor-outline");
+
+    if(cursorDot && cursorOutline) {
+        window.addEventListener("mousemove", (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            // Smooth outline movement
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 400, fill: "forwards" });
+        });
+
+        // Hover effect for interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .social-btn, .svc-card, .port-card, .testi-card, .about-mini-card');
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursorOutline.classList.add('cursor-hover'));
+            el.addEventListener('mouseleave', () => cursorOutline.classList.remove('cursor-hover'));
+        });
+    }
 });
 </script>
 </body>
